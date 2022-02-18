@@ -3,10 +3,14 @@
 namespace App\Containers\Mahasiswa\Mahasiswa\Models;
 
 use App\Ship\Parents\Models\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class Mahasiswa extends Model
 {
     protected $table = 'mahasiswa';
+    protected $connection = 'mongodb';
+	protected $collection = 'mahasiswa';
+
 
     protected $fillable = [
         'Name',
