@@ -6,14 +6,18 @@ use App\Containers\AppSection\Authentication\Traits\AuthenticationTrait;
 use App\Containers\AppSection\Authorization\Traits\AuthorizationTrait;
 use App\Ship\Parents\Models\UserModel;
 use Illuminate\Notifications\Notifiable;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+use Jenssegers\Mongodb\Auth\User as Authenticatable;
 
 class User extends UserModel
 {
     use AuthorizationTrait;
     use AuthenticationTrait;
     use Notifiable;
+    
 
     protected $table = 'users';
+    protected $collection = 'users';
 
     protected $fillable = [
         'name',
