@@ -23,6 +23,6 @@ use App\Containers\Mahasiswa\Mahasiswa\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('mahasiswas/{id}', [Controller::class, 'findMahasiswaById'])
-    ->name('api_mahasiswa_find_mahasiswa_by_id')
-    ->middleware(['auth:api']);
+    ->name('api_mahasiswa_find_mahasiswa_by_id');
+    //->middleware(['auth:api']);//
 

@@ -23,6 +23,6 @@ use App\Containers\Mahasiswa\Mahasiswa\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::delete('mahasiswas/{id}', [Controller::class, 'deleteMahasiswa'])
-    ->name('api_mahasiswa_delete_mahasiswa')
-    ->middleware(['auth:api']);
+    ->name('api_mahasiswa_delete_mahasiswa');
+    //->middleware(['auth:api']);//
 
