@@ -22,7 +22,7 @@
 use App\Containers\Mahasiswa\Mahasiswa\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-Route::get('mahasiswas', [Controller::class, 'getAllMahasiswas'])
-    ->name('api_mahasiswa_get_all_mahasiswas');
+Route::get('mahasiswas', [Controller::class, 'getAllMahasiswas']);
+   // ->name('api_mahasiswa_get_all_mahasiswas');//
     //->middleware(['auth:api']);//
 

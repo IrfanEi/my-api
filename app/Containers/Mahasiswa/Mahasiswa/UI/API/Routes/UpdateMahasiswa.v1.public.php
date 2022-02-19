@@ -22,7 +22,7 @@
 use App\Containers\Mahasiswa\Mahasiswa\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('mahasiswas/{id}', [Controller::class, 'updateMahasiswa'])
-    ->name('api_mahasiswa_update_mahasiswa');
+Route::patch('mahasiswas/{id}', [Controller::class, 'updateMahasiswa']);
+   // ->name('api_mahasiswa_update_mahasiswa');//
     //->middleware(['auth:api']);//
 
